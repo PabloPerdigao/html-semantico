@@ -3,3 +3,175 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Amsterdam-Four'; 
+    src: url('./assets/fonts/amsterdam-four.ttf') format('truetype'); 
+}
+
+:root {
+  --cor-primaria: #108080;
+  --cor-secundaria: #10656b;
+  --cor-primaria-fonte: #fdfefe;
+  --cor-secundaria-fonte: rgba(255,255,255,.85);
+  --cor-primaria-bg: #010f10;
+  --cor-borda: rgba(31, 202, 195, 0.50);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--cor-primaria-bg);
+  color: var(--cor-texto);
+
+  font-style: normal;
+
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Amsterdam-Four', sans-serif;
+  color: var(--cor-primaria);
+}
+
+
+h2 {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  color: var(--cor-secundaria-fonte);
+}
+
+p {
+  color: var(--cor-secundaria-fonte);
+}
+
+/* ---- Iníco - Cabeçalho ---- */
+
+  .header-container {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-container a:hover {
+    color: var(--cor-primaria);
+  }
+  
+  .logo {
+    width: 112px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .header-container nav ul {
+    display: flex;
+    flex-direction: row;
+    
+    margin: 24px;
+    
+    gap: 16px;
+    
+    margin-right: 20px;
+  }
+  
+  .header-container nav ul li {
+    list-style: none;
+  }
+  
+  .header-container nav a {
+    
+    font-size: 24px;
+    font-weight: 400;
+    
+    padding: 11px 24px;
+    position: relative;
+    
+    text-align: center;
+    text-decoration: none;
+    
+  }
+
+  .header-container nav ul li a {
+    color: var(--cor-secundaria-fonte);
+  }
+
+  .header-container nav ul li a:hover {
+    color: var(--cor-primaria-fonte);
+  }
+  
+  .header-container nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor-secundaria); 
+    transition: width 0.3s ease-out; 
+  }
+  
+  .header-container nav ul li a:hover::after {
+    width: 100%;  
+  }
+  
+/*Fim - Cabeçalho */
+
+/* Início - Seção Sobre Mim */
+
+.sobre {
+  margin: 64px 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 88px;
+
+}
+
+.sobre figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sobre figure img {
+  width: 400px;
+  height: auto;
+  border: 4px solid var(--cor-borda);
+  border-radius: 32px 32px 0 0;
+}
+
+.sobre figcaption {
+  font-size: 14px;
+
+  color: var(--cor-secundaria-fonte);
+  border: solid 4px var(--cor-borda);
+  border-radius: 0 0 32px 32px;
+  padding: 4px 8px;
+}
+
+.sobre hgroup h1 {
+  font-family: 'Amsterdam-Four', sans-serif;
+  color: var(--cor-primaria);
+  font-weight: 400;
+  font-size: 64px;
+  margin-bottom: 32px;
+} 
+
+.sobre hgroup h2 {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  color: var(--cor-secundaria-fonte);
+  font-size: 24px;
+}
+
+.sobre p {
+  color: var(--cor-secundaria-fonte);
+}
+
+/* Fim - Seção Sobre Mim */
+
+
