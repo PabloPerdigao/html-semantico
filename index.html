@@ -7,9 +7,228 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Semântico</title>
+
+  <!-- link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="/ style.css">
+  <!-- link para o favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- link para as fontes -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
+
 <!-- BODY | Tag que envolve e exibe todo o conteúdo visível para o usuário da página -->
 <body>
+  <!-- HEADER | Tag que representa o cabeçalho da página -->
+  <header class="header-container">
+
+    <img  class="logo" src="./assets/img/logo.png" alt="imagem da logo">
+
+    <!-- NAV | Tag que representa a área de navegação da página -->
+    <nav>
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- MAIN | Tag que representa o conteúdo principal da página -->
+  <main>
+
+
+    <!-- SECTION - Sobre Mim | Tag que representa a seção que mostra as informações sobre mim -->
+    <section class="sobre">
+
+      <!-- FIGURE | Tag que representa uma imagem com uma legenda sendo usada para exibir minha foto de perfil -->
+      <figure>
+        <img src="./assets/img/foto-perfil.jpg" alt="Foto de Pablo Perdigão">
+        <figcaption>Foto de perfil</figcaption>
+      </figure>
+
+      <div class="sobre-container">
+        <!-- HGROUP | Tag que representa um grupo de cabeçalhos -->
+        <hgroup>
+          <h1>Pablo Perdigão</h1>
+          <h2>
+              <!-- ABBR | Tag que representa a abreviação "Dev" de "Desenvolvedor" -->
+              <abbr title="Desenvolvedor">Dev</abbr> Front-End Jr
+          </h2>
+        </hgroup>
+
+        <p>Olá, meu nome é <strong>Pablo Perdigão</strong> e sou um <em>desenvolvedor front-end júnior</em>. <br> Tenho experiência em <mark>HTML, CSS & JavaScript</mark>, e estou sempre em busca <br>de aprender novas tecnologias e aprimorar minhas habilidades.</p>
+      </div>
+
+    </section>
+
+    <!-- SECTION - Projetos | Tag que representa a seção que mostra os projetos desenvolvidos -->
+    <section class="projetos">
+      <h2>Projetos</h2>
+
+      <!-- ARTICLE | Tag que representa um projeto individual -->
+      <article class="projeto-1">
+        <h2>Projeto 1</h2>
+
+        <h3>Descrição do Projeto 1 
+          <time datetime="2023-01-01">1 de Janeiro de 2023</time>
+        </h3>
+
+        <p>Tecnologias utilizadas: HTML, CSS, JavaScript</p>
+      </article>
+
+      <article class="projeto-2">
+        <h2>Projeto 2</h2>
+
+        <h3>Descrição do Projeto 2
+           <time datetime="2023-02-01">1 de Fevereiro de 2023</time>
+        </h3>
+
+        <p>Tecnologias utilizadas: HTML, CSS</p>
+      </article>
+
+      <!-- ASIDE | Tag que representa uma seção lateral com informações adicionais sobre minhas habilidades e tecnologias que já tive contato -->
+      <aside class="habilidades-tecnologias">
+        <h3>Habilidades & Tecnologias</h3>
+
+        <!-- DETAILS | Tag que representa um grupo de informações que podem ser expandidas ou recolhidas. Está sendo usado para mostrar as habilidades e tecnologias -->
+        <details>
+          <summary> Habilidades</summary>
+          <ul>
+            <li>Adaptabilidade</li>
+            <li>Resiliência</li>
+            <li>Proatividade</li>
+            <li>Organização</li>
+        </details>
+
+        <details>
+          <summary>Front-End</summary>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+        </details>
+
+        <details>
+          <summary>Back-End</summary>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Spring</li>
+            <li>Oracle SQL</li>
+        </details>
+
+
+      </aside>
+
+      <!-- TABLE | Tag que representa a tabela de detalhes dos projetos -->
+      <table class="detalhes-projetos">
+        <caption>Projetos</caption>
+        <thead>
+          <tr>
+            <th scope="col">Nome do projeto</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Tecnologias</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">Projeto 1</td>
+            <td scope="row">Descrição do projeto 1</td>
+            <td scope="row">HTML, CSS, JavaScript</td>
+          </tr>
+          <tr>
+            <td scope="row">Projeto 2</td>
+            <td scope="row">Descrição do projeto 2</td>
+            <td scope="row">HTML, CSS</td>
+          </tr>
+          <tr>
+            <td scope="row">Projeto 3</td>
+            <td scope="row">Descrição do projeto 3</td>
+            <td scope="row">JavaScript, React</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total de projetos: 3</td>
+          </tr>
+        </tfoot>
+      </table>
+
+    </section>
+
+    <!-- SECTION - Contato | Tag que representa a seção de contato -->
+    <section class="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
+
+      <!-- FORM | Tag que representa o formulário de contato -->
+      <form action="" method="post">
+        <fieldset>
+          <legend>Formulário de Contato</legend>
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+        
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+
+        <!-- DIALOG | Tag que representa uma caixa de diálogo que é exibida como confirmação após a execução do envio do formulário -->
+        <dialog open>
+          <form method="dialog">
+            <p>Mensagem enviada com sucesso!</p>
+            <button type="submit">Fechar</button>
+          </form>
+        </dialog>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER | Tag que representa o rodapé da página -->
+  <footer>
+    <p>&copy; 2025 Pablo Perdigão. Todos os direitos reservados.</p>
+
+    <section class="redes-sociais">
+      <a href="https://www.linkedin.com/in/pabloperdigao/" aria-label="Link para o LinkedIn">
+        <img src="./assets/img/icons/linkedin.png" alt="Ícone do LinkedIn">
+      </a>
+
+      <a href="https://github.com/pabloperdigao" aria-label="Link para o GitHub">
+        <img src="./assets/img/icons/github.png" alt="Ícone do GitHub">
+      </a>
+
+      <a href="https://www.figma.com/@pabloperdigao" aria-label="Link para o Figma">
+        <img src="./assets/img/icons/figma.png" alt="Ícone do Figma">
+      </a>
+
+    </section>
+
+    <!-- ADDRESS | Tag que representa as informações de contato -->
+    <address>
+      <p>Pablo Perdigão</p>
+      <p>Email: <a href="mailto:pabloagps@gmail.com">pabloagps@gmail.com</a></p>
+      <p>Telefone: (31) 9 9888-1324</p>
+      <p>Endereço: Santa Bárbara-MG</p>
+
+      <!-- IFRAME | Tag que representa um mapa com a localização do endereço -->
+      <iframe src="" frameborder="0"></iframe>
+    </address>
+
+  </footer>
   
 </body>
 </html>
