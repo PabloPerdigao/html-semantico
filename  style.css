@@ -12,8 +12,9 @@
 :root {
   --cor-primaria: #108080;
   --cor-secundaria: #10656b;
-  --cor-primaria-fonte: #fdfefe;
-  --cor-secundaria-fonte: rgba(255,255,255,.85);
+  --cor-fonte-principal: #fdfefe;
+  --cor-fonte-subtitulo: rgba(255, 255, 255, 0.89);
+  --cor-fonte-paragrafo: #e2e7e7f6;
   --cor-primaria-bg: #010f10;
   --cor-borda: rgba(31, 202, 195, 0.50);
 }
@@ -21,7 +22,7 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: var(--cor-primaria-bg);
-  color: var(--cor-texto);
+  color: var(--cor-fonte-paragrafo);
 
   font-style: normal;
 
@@ -38,11 +39,27 @@ h1 {
 h2 {
   font-family: "Assistant", sans-serif;
   font-weight: 600;
-  color: var(--cor-secundaria-fonte);
+  color: var(--cor-fonte-subtitulo);
+  font-size: 48px;
+}
+
+h3 {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  color: var(--cor-fonte-subtitulo);
+  font-size: 24px;
+}
+
+h4 {
+  font-family: "Assistant", sans-serif;
+  font-weight: 500;
+  color: var(--cor-fonte-subtitulo);
+  font-size: 18px;
+  margin-bottom: 12px;
 }
 
 p {
-  color: var(--cor-secundaria-fonte);
+  color: var(--cor-fonte-paragrafo);
 }
 
 /* ---- Iníco - Cabeçalho ---- */
@@ -95,12 +112,12 @@ p {
   }
 
   .header-container nav ul li a {
-    color: var(--cor-secundaria-fonte);
+    color: var(--cor-fonte-subtitulo);
   }
 
   .header-container nav ul li a:hover {
-    color: var(--cor-primaria-fonte);
-  }
+    color: var(--cor-fonte-principal);
+  }            
   
   .header-container nav ul li a::after {
     content: '';
@@ -147,7 +164,7 @@ p {
 .sobre figcaption {
   font-size: 14px;
 
-  color: var(--cor-secundaria-fonte);
+  color: var(--cor-fonte-paragrafo);
   border: solid 4px var(--cor-borda);
   border-radius: 0 0 32px 32px;
   padding: 4px 8px;
@@ -164,14 +181,48 @@ p {
 .sobre hgroup h2 {
   font-family: "Assistant", sans-serif;
   font-weight: 600;
-  color: var(--cor-secundaria-fonte);
+  color: var(--cor-fonte-subtitulo);
   font-size: 24px;
 }
 
 .sobre p {
-  color: var(--cor-secundaria-fonte);
+  color: var(--cor-fonte-paragrafoo);
 }
 
 /* Fim - Seção Sobre Mim */
 
+.projetos {
+  margin: 64px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.projetos article {
+  border: 2px solid var(--cor-borda);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.projetos article:hover {
+  border-color: var(--cor-primaria);
+}
+
+.projetos aside {
+  
+  border: 2px solid var(--cor-borda);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.projetos aside h3 {
+  margin-bottom: 16px;
+}
+
+.projetos aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 32px;
+  
+}
 
