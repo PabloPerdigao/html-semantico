@@ -6,7 +6,7 @@ Onde cada tag utilizada é explicada (no arquivo index.html com comentários e a
 
  ### Portifólio | Estrutura HTML Semântca
 
- ![Estrutura Portifolio](./assets/estrutura-html-portifolio.png " imagem da estrutura html do portifolio")
+ ![Estrutura Portifolio](./assets/img/estrutura-html-portifolio.png " imagem da estrutura html do portifolio")
 
 
 
