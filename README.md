@@ -16,7 +16,7 @@ Você pode acessar a versão final do projeto (publicada com GitHub Pages) no li
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **HTML5 (Foco Semântico):** A estrutura da página foi construída seguindo as melhores práticas de semântica.
+* **HTML5:** A estrutura da página foi construída seguindo as melhores práticas de semântica.
 * **CSS3:** Para estilização, utilizando Flexbox, Variáveis CSS e fontes customizadas (`@font-face`).
 * **Google Fonts:** Para a tipografia do projeto.
 
@@ -24,7 +24,7 @@ Você pode acessar a versão final do projeto (publicada com GitHub Pages) no li
 
  ### Portifólio | Estrutura HTML Semântca
 
-Esta tabela resume as principais escolhas estruturais e o porquê de cada tag:
+Esta tabela contém as principais escolhas estruturais e o porquê de cada tag:
 
 | Tag | Função | Justificativa de Uso |
 | :--- | :--- | :--- |
@@ -35,12 +35,32 @@ Esta tabela resume as principais escolhas estruturais e o porquê de cada tag:
 | `<article>` | Conteúdo independente. | Usado para cada projeto ("Finance Pro", "Star UP"), pois são itens que fariam sentido sozinhos em um feed. |
 | `<h1>`-`<h4>`| Títulos. | Usados em ordem hierárquica estrita (H1: Nome, H2: Cargo/Seções, H3: Títulos de Projetos). |
 | `<aside>` | Conteúdo agrupado. | Contém "Habilidades & Tecnologias", um conteúdo relacionado aos projetos. |
+| `<footer>` | Rodapé da página. | Contém informações secundárias, como copyright, redes sociais e informações de contato (`<address>`). |
+
+
+### Tags de Conteúdo Específico
+
+| Tag | Propósito (Função) | Justificativa de Uso (Contexto) |
+| :--- | :--- | :--- |
 | `<figure>` | Mídia com legenda. | Agrupa a foto de perfil (`<img>`) e seu `<figcaption>`, criando uma ligação semântica entre eles. |
+| `<figcaption>`| Legenda do `<figure>`. | Usado para fornecer a legenda "Foto de perfil" para a imagem (`<img>`) dentro do `<figure>`. |
 | `<table>` | Tabela de dados. | Usada para listar os "Detalhes dos Projetos" de forma estruturada, com `<thead>`, `<tbody>` e `<tfoot>`. |
+| `<details>` | Widget interativo. | Usado no `<aside>` para criar um menu "sanfona" (accordion) que esconde/mostra as listas de habilidades. |
+| `<summary>` | Título do `<details>`. | Usado como o título clicável (ex: "Habilidades", "Techs") para o widget `<details>`. |
 | `<form>` | Formulário interativo. | Usado na seção "Contato" para coletar dados do usuário. |
 | `<fieldset>`| Agrupamento de campos. | Agrupa visual e semanticamente os campos do formulário de contato, com um `<legend>` descritivo. |
-| `<footer>` | Rodapé da página. | Contém informações secundárias, como copyright, redes sociais e informações de contato (`<address>`). |
 | `<address>` | Informação de contato. | Fornece dados de contato do autor (email, telefone, localização) dentro do rodapé. |
+
+### Tags Inline
+
+| Tag | Propósito (Função) | Justificativa de Uso (Contexto) |
+| :--- | :--- | :--- |
+| `<strong>` | Forte importância. | Usado para destacar o nome "Pablo Perdigão" no parágrafo de introdução, dando-lhe forte ênfase. |
+| `<em>` | Ênfase (ênfase vocal). | Usado para enfatizar o cargo "desenvolvedor front-end júnior", como se fosse falado com ênfase. |
+| `<mark>` | Texto destacado. | Usado como um "marca-texto" para destacar as tecnologias (HTML, CSS, etc.) no parágrafo de introdução. |
+| `<time>` | Data ou hora. | Usado para marcar semanticamente as datas dos projetos, com o atributo `datetime` para leitura de máquina. |
+| `<abbr>` | Abreviação. | Usado em "Dev" com o `title="Desenvolvedor"` para explicar a abreviação. |
+| `<br>` | Quebra de linha. | Usado no parágrafo de introdução para forçar uma quebra de linha por razões estéticas. |
 
 ---
 
@@ -53,18 +73,16 @@ A semântica não é apenas organização; é o pilar para tornar a web acessív
 * **Atributo `lang`:** Essencial para que o leitor de tela use a pronúncia correta (Português do Brasil).
 * **Tags de Formulário:** O uso de `<label for="id">` conecta o rótulo ao seu `input`, melhorando a acessibilidade para quem navega via teclado.
 
-### ⭐ Bônus Técnico: Atributos ARIA
+###  Atributos ARIA
 
-Para cumprir o bônus, foram utilizados atributos `aria-label` nos links de redes sociais no rodapé. Como esses links contêm apenas um ícone (`<img>`), o `aria-label` fornece um texto descritivo (ex: "Link para o LinkedIn") para leitores de tela, garantindo que o propósito do link seja claro.
+Para cumprir o bônus, utilizei os `aria-label` nos links de redes sociais no rodapé. Como eles contêm apenas um ícone (`<img>`), o `aria-label` fornece uma descrição (ex: "Link para o LinkedIn") para leitores de tela, garantindo que o propósito do link evidente.
 
 ---
 
-## 👨‍💻 Autor
+### 👨‍💻 Pablo Perdigão
 
-**Pablo Perdigão**
-
-* **LinkedIn:** [linkedin.com/in/pabloperdigao](https://www.linkedin.com/in/pabloperdigao/)
-* **GitHub:** [github.com/pabloperdigao](https://github.com/pabloperdigao)
+ - **LinkedIn:** [linkedin.com/in/pabloperdigao](https://www.linkedin.com/in/pabloperdigao/)
+- **GitHub:** [github.com/pabloperdigao](https://github.com/pabloperdigao)
 
 
 
