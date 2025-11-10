@@ -355,13 +355,65 @@ p {
 
 /* Fim - Contato */
 
-  
-
-
 
 /* Início - Footer */
 
+  footer {
+    padding-top: 24px;
+    border-top: 1px solid var(--cor-borda);
+    margin-top: 72px;
+    font-size: 14px;
+    text-align: center;
+  }
 
+  
+  #redes-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  footer img {
+    height: 38px; 
+    width: auto;
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 8px;
+    margin-top: 32px;
+  }
+
+  footer img:hover {
+    filter: brightness(1.5);
+  }
+
+
+  address {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  address a {
+    color: var(--cor-fonte-paragrafo);
+    text-decoration: none;
+  }
+
+  address a:hover {
+    color: var(--cor-primaria);
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 16px;
+    margin-top: 16px;
+  }
+ 
 
 
 /* Fim - Footer */
