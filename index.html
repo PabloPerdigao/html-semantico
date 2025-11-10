@@ -1,19 +1,20 @@
 <!-- Informa ao navegador este é um documento HTML5 -->
 <!DOCTYPE html>
+<!-- LANG | Indica a linguagem do conteúdo da página -->
 <html lang="pt-br">
   <!-- HEAD | Tag que orienta o navegador sobre o conteúdo da página -->
 <head>
-  <!-- metadados -->
+  <!-- META | metadados: caracteres, responsividade e título da aba do navegador -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Semântico</title>
 
   <!-- link para o arquivo CSS -->
   <link rel="stylesheet" href="styles.css">
-  <!-- link para o favicon -->
+  <!-- link do favicon : imagem de miniatura que aparece na aba do navegador -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- link para as fontes -->
+  <!-- link para as fontes do projeto -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -25,6 +26,7 @@
   <!-- HEADER | Tag que representa o cabeçalho da página -->
   <header class="header-container">
 
+    <!-- IMG | Tag que representa a imagem da logo da página -->
     <img  class="logo" src="./assets/img/logo.png" alt="imagem da logo com fundo verde">
 
     <!-- NAV | Tag que representa a área de navegação da página -->
@@ -51,7 +53,9 @@
         <figcaption>Foto de perfil</figcaption>
       </figure>
 
+      <!-- DIV | Não é uma tag semântica mas foi usada para representar um contêiner visando agrupar elementos relacionados para estilização -->
       <div class="sobre-container">
+
         <!-- HGROUP | Tag que representa um grupo de cabeçalhos -->
         <hgroup>
           <h1>Pablo Perdigão</h1>
@@ -61,7 +65,17 @@
           </h2>
         </hgroup>
 
-        <p>Olá, meu nome é <strong>Pablo Perdigão</strong> e sou um <em>desenvolvedor front-end júnior</em>. <br> Tenho experiência em <mark>HTML, CSS, JavaScript & Bootstrap</mark>, e estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades.</p>
+        <!-- P | Tag que representa um parágrafo de texto -->
+        <p>Olá, meu nome é 
+          <!-- STRONG | Tag que representa um texto em negrito -->
+          <strong>Pablo Perdigão</strong> e sou um 
+          <!-- EM | Tag que representa um texto em itálico -->
+          <em>desenvolvedor front-end júnior</em>. 
+          <!-- BR | Tag que representa uma quebra de linha -->
+          <br> Tenho experiência em 
+          <!-- MARK | Tag que representa um texto destacado -->
+          <mark>HTML, CSS, JavaScript & Bootstrap</mark>, e estou sempre <br>
+          em busca de aprender novas tecnologias e aprimorar minhas habilidades.</p>
       </div>
 
     </section>
@@ -70,7 +84,7 @@
     <section class="projetos">
       <h2>Projetos</h2>
       
-      <!-- ARTICLE | Tag que representa um projeto individual -->
+      <!-- ARTICLE | Tag que representa um conteúdo/projeto individual na página -->
       <article class="projeto-1">
 
         <h3>Finance Pro</h3>
@@ -96,10 +110,16 @@
       <aside class="habilidades-tecnologias">
         <h3>Habilidades & Tecnologias</h3>
 
-        <!-- DETAILS | Tag que representa um grupo de informações que podem ser expandidas ou recolhidas. Está sendo usado para mostrar as habilidades e tecnologias -->
+        <!-- DETAILS | Tag que representa um grupo de informações que podem ser expandidas ou recolhidas, Sendo usado para mostrar as habilidades e tecnologias -->
+
         <details>
+          <!-- SUMMARY | Tag que representa um resumo ou legenda para o conteúdo do details -->
+
           <summary> Habilidades</summary>
+          <!-- UL | Tag que representa uma lista não ordenada -->
+
           <ul>
+            <!-- LI | Tag que representa um item da lista -->
             <li>Adaptabilidade</li>
             <li>Resiliência</li>
             <li>Proatividade</li>
@@ -136,16 +156,27 @@
 
       <!-- TABLE | Tag que representa a tabela de detalhes dos projetos -->
       <table class="detalhes-projetos">
+
+        <!-- CAPTION | Tag que representa a legenda da tabela -->
         <caption>PROJETOS</caption>
+
+        <!-- THEAD | Tag que representa o cabeçalho da tabela -->
         <thead>
+
+          <!-- TR | Tag que representa uma linha na tabela -->
           <tr>
+            <!-- TH | Tag que representa uma célula do cabeçalho na tabela -->
             <th scope="col">Nome do projeto</th>
             <th scope="col">Descrição</th>
             <th scope="col">Tecnologias</th>
           </tr>
         </thead>
+        
+        <!-- TBODY | Tag que representa o corpo da tabela -->
         <tbody>
+          <!-- TR | Tag que representa uma linha na tabela -->
           <tr>
+            <!-- TD | Tag que representa uma célula de dados na tabela -->
             <td scope="row">Projeto 1</td>
             <td scope="row">Descrição do projeto 1</td>
             <td scope="row">HTML, CSS, JavaScript</td>
@@ -161,6 +192,8 @@
             <td scope="row">JavaScript, React</td>
           </tr>
         </tbody>
+        
+        <!-- TFOOT | Tag que representa o rodapé da tabela -->
         <tfoot>
           <tr>
             <td colspan="3">Total de projetos: 3</td>
@@ -176,10 +209,16 @@
 
       <!-- FORM | Tag que representa o formulário de contato -->
       <form action="" method="post">
+
+        <!-- FIELDSET | Tag que representa um grupo de elementos relacionados em um formulário -->
         <fieldset>
+          <!-- LEGEND | Tag que representa a legenda para o conteúdo do fieldset -->
           <legend>Entre em contato comigo preenchendo o formulário abaixo:</legend>
 
+          <!-- LABEL | Tag que representa um rótulo para um elemento de formulário -->
           <label for="nome">Nome:</label>
+
+          <!-- INPUT | Tag que representa um campo de entrada de dados -->
           <input type="text" id="nome" name="nome" required>
 
         
@@ -187,19 +226,22 @@
           <input type="email" id="email" name="email" required>
   
           <label for="mensagem">Mensagem:</label>
+
+          <!-- TEXTAREA | Tag que representa uma área de texto expansível que pode receber múltiplas linhas -->
           <textarea id="mensagem" name="mensagem" required></textarea>
         
         </fieldset>
 
+        <!-- BUTTON | Tag que representa um botão para enviar o formulário -->
         <button type="submit">Enviar</button>
 
         <!-- DIALOG | Tag que representa uma caixa de diálogo que é exibida como confirmação após a execução do envio do formulário -->
-        <!-- <dialog open>
+        <dialog open>
           <form method="dialog">
             <p>Mensagem enviada com sucesso!</p>
             <button type="submit">Fechar</button>
           </form>
-        </dialog> -->
+        </dialog>
       </form>
     </section>
 
@@ -212,7 +254,10 @@
 
     <p>&copy; 2025 Pablo Perdigão. Todos os direitos reservados.</p>
 
+    <!-- SECTION | Tag que representa a seção de links para redes sociais -->
     <section id="redes-sociais">
+
+      <!-- A | Tag que representa um link que direciona para as redes sociais -->
       <a href="https://www.linkedin.com/in/pabloperdigao/" aria-label="Link para o LinkedIn">
         <img src="./assets/img/icons/linkedin.png" alt="Ícone do LinkedIn">
       </a>
