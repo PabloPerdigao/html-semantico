@@ -48,8 +48,10 @@ Esta tabela contém as principais escolhas estruturais e o porquê de cada tag:
 | `<details>` | Widget interativo. | Usado no `<aside>` para criar um menu "sanfona" (accordion) que esconde/mostra as listas de habilidades. |
 | `<summary>` | Título do `<details>` | Usado como o título clicável (ex: "Habilidades", "Techs") para o widget `<details>` |
 | `<form>` | Formulário interativo | Usado na seção "Contato" para coletar dados do usuário. |
+| `<dialog` | Modal de confirmação | exibe um modal de confirmação assim que o usuário submete o formulário |
 | `<fieldset>`| Agrupamento de campos. | Agrupa visual e semanticamente os campos do formulário de contato, com um `<legend>` descritivo |
 | `<address>` | Informação de contato. | Fornece dados de contato do autor (email, telefone, localização) dentro do rodapé |
+
 
 ### Tags Inline
 
@@ -77,7 +79,7 @@ A semântica não é apenas organização; é o pilar para tornar a web acessív
 
 Como bônus, utilizei os `aria-label` nos links de redes sociais no rodapé. Como eles contêm apenas um ícone (`<img>`), o `aria-label` fornece uma descrição (ex: "Link para o LinkedIn") para leitores de tela.
 
-E usei a tag `<dialog>` que por meio do `JavaScript` exibe um modal ao submeter o forms que permite o usuário ter a certeza de que os dados foram enviados e limpa os dados do formulário para uma nova submissão.
+E usei a tag `<script>` adicionando a lógica `JavaScript` para o `<dialog>` que exibe um modal ao submeter o forms que permite o usuário ter a certeza de que os dados foram enviados e limpa os dados do formulário para uma nova submissão.
 
 ---
 
