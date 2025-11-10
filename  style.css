@@ -186,7 +186,7 @@ p {
 }
 
 .sobre p {
-  color: var(--cor-fonte-paragrafoo);
+  color: var(--cor-fonte-paragrafo);
 }
 
 .sobre p mark {
@@ -414,6 +414,5 @@ p {
     margin-top: 16px;
   }
  
-
 
 /* Fim - Footer */
