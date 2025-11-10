@@ -9,7 +9,7 @@
   <title>HTML Semântico</title>
 
   <!-- link para o arquivo CSS -->
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="/ style.css"> 
   <!-- link para o favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -30,9 +30,9 @@
     <!-- NAV | Tag que representa a área de navegação da página -->
     <nav>
       <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Contato</a></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
       </ul>
     </nav>
 
@@ -61,7 +61,7 @@
           </h2>
         </hgroup>
 
-        <p>Olá, meu nome é <strong>Pablo Perdigão</strong> e sou um <em>desenvolvedor front-end júnior</em>. <br> Tenho experiência em <mark>HTML, CSS & JavaScript</mark>, e estou sempre em busca <br>de aprender novas tecnologias e aprimorar minhas habilidades.</p>
+        <p>Olá, meu nome é <strong>Pablo Perdigão</strong> e sou um <em>desenvolvedor front-end júnior</em>. <br> Tenho experiência em <mark>HTML, CSS, JavaScript & Bootstrap</mark>, e estou sempre em busca <br>de aprender novas tecnologias e aprimorar minhas habilidades.</p>
       </div>
 
     </section>
@@ -125,7 +125,8 @@
             <ul>
               <li>Python</li>
               <li>Java</li>
-              <li>Spring</li>
+              <li>Kotlin</li>
+              <li>SpringBoot</li>
               <li>RESTful Api</li>
               <li>Oracle SQL</li>
             </ul>
@@ -135,7 +136,7 @@
 
       <!-- TABLE | Tag que representa a tabela de detalhes dos projetos -->
       <table class="detalhes-projetos">
-        <caption>Projetos</caption>
+        <caption>PROJETOS</caption>
         <thead>
           <tr>
             <th scope="col">Nome do projeto</th>
@@ -172,12 +173,11 @@
     <!-- SECTION - Contato | Tag que representa a seção de contato -->
     <section class="contato">
       <h2>Contato</h2>
-      <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
 
       <!-- FORM | Tag que representa o formulário de contato -->
       <form action="" method="post">
         <fieldset>
-          <legend>Formulário de Contato</legend>
+          <legend>Entre em contato comigo preenchendo o formulário abaixo:</legend>
 
           <label for="nome">Nome:</label>
           <input type="text" id="nome" name="nome" required>
@@ -194,12 +194,12 @@
         <button type="submit">Enviar</button>
 
         <!-- DIALOG | Tag que representa uma caixa de diálogo que é exibida como confirmação após a execução do envio do formulário -->
-        <dialog open>
+        <!-- <dialog open>
           <form method="dialog">
             <p>Mensagem enviada com sucesso!</p>
             <button type="submit">Fechar</button>
           </form>
-        </dialog>
+        </dialog> -->
       </form>
     </section>
 
