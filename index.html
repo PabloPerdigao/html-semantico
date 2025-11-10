@@ -286,20 +286,19 @@
 
   </footer>
 
-
+  <!-- SCRIPT | Adiciona a lógica de funcionamento ao dialog que é exibido como modal ao submeter o formulário -->
   <script>
-      const formContato = document.getElementById('form-contato');
-      const dialogConfirmacao = document.getElementById('dialog-confirmacao');
+    const formContato = document.getElementById('form-contato');
+    const dialogConfirmacao = document.getElementById('dialog-confirmacao');
 
-      formContato.addEventListener('submit', function(event) {
-        
-        event.preventDefault();
+    formContato.addEventListener('submit', function(event) {
+      
+      event.preventDefault();
 
-        dialogConfirmacao.showModal();
+      dialogConfirmacao.showModal();
 
-        formContato.reset();
-      });
+      formContato.reset();
+    });
     </script>
-
 </body>
 </html>
