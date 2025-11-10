@@ -236,14 +236,14 @@
         <button type="submit">Enviar</button>
 
       </form>
-      
+
         <!-- DIALOG | Tag que representa uma caixa de diálogo que é exibida como confirmação após a execução do envio do formulário -->
-        <dialog open>
+        <dialog id="dialog-confirmacao">
           <form method="dialog">
             <p>Mensagem enviada com sucesso!</p>
             <button type="submit">Fechar</button>
           </form>
-        </dialog>
+      </dialog>
     </section>
 
   </main>
@@ -285,6 +285,21 @@
     </address>
 
   </footer>
-  
+
+
+  <script>
+      const formContato = document.getElementById('form-contato');
+      const dialogConfirmacao = document.getElementById('dialog-confirmacao');
+
+      formContato.addEventListener('submit', function(event) {
+        
+        event.preventDefault();
+
+        dialogConfirmacao.showModal();
+
+        formContato.reset();
+      });
+    </script>
+
 </body>
 </html>

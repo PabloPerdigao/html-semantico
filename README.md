@@ -73,9 +73,11 @@ A semântica não é apenas organização; é o pilar para tornar a web acessív
 * **Atributo `lang`:** Essencial para que o leitor de tela use a pronúncia correta de acordo com o idioma.
 * **Tags de Formulário:** O uso de `<label for="id">` associado ao `input`, melhorando a acessibilidade para quem navega pelo teclado.
 
-###  Atributos ARIA
+###  Bônus
 
 Como bônus, utilizei os `aria-label` nos links de redes sociais no rodapé. Como eles contêm apenas um ícone (`<img>`), o `aria-label` fornece uma descrição (ex: "Link para o LinkedIn") para leitores de tela.
+
+E usei a tag `<dialog>` que por meio do `JavaScript` exibe um modal ao submeter o forms que permite o usuário ter a certeza de que os dados foram enviados e limpa os dados do formulário para uma nova submissão.
 
 ---
 
